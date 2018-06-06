@@ -14,6 +14,8 @@ console.log($( window ).width());
 		// 	.addClass("padder")
 		// 		.css({"border-bottom": "1px solid grey", "padding-bottom" : "50px" });
 
+		$('#sticker').addClass('stickbot');
+
 
 		$('.col-6.col-lg-3').removeClass('box').removeClass('boxright').removeClass('boxleft')
 
