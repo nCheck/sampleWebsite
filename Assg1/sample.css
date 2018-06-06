@@ -115,16 +115,17 @@ div.scrollmenu a:hover {
     background-color: white; /* Green */
     border: none;
     color: white;
-    padding: 15px 15px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 8px;
+    border : 1px solid black;
 }
 
 .button1 {background-color: #008CBA;} /* Blue */
 .button2 {background-color: #f44336;} /* Red */
-.button3 {color: black; border : 1px solid black;} /* White */
+.button3 {color: black;} /* White */
 .button4 {background-color: #555555;} /* Black */
 
 .cbutton:hover {
