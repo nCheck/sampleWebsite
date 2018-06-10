@@ -95,20 +95,20 @@ $('#check').click(function(event) {
 
 	//Getting Normal data
 
-	$.get( "https://nginx:P1Yd3MF0P@tshirtpartner.com/orders/pincode?pincode=400002"
-		, function( data ) {
-		console.log('hello');
-	  $( ".avail" ).html('<h1>' + data + '</h>'  );
-	});
-
-
-	// $.getJSON('http://anyorigin.com/go?url=https%3A//nginx%3AP1Yd3MF0P@tshirtpartner.com/orders/pincode%3Fpincode%3D'+name+'&callback=?', 
-	// 	function(data){
-	// 	if((data.contents) == "False")
-	// 	{
-	// 		$('#pincode').tooltip('show');
-	// 	}
+	// $.get( "https://nginx:P1Yd3MF0P@tshirtpartner.com/orders/pincode?pincode=400002"
+	// 	, function( data ) {
+	// 	console.log('hello');
+	//   $( ".avail" ).html('<h1>' + data + '</h>'  );
 	// });
+
+
+	$.getJSON('http://anyorigin.com/go?url=https%3A//nginx%3AP1Yd3MF0P@tshirtpartner.com/orders/pincode%3Fpincode%3D'+name+'&callback=?', 
+		function(data){
+		if((data.contents) == "False")
+		{
+			$('#pincode').tooltip('show');
+		}
+	});
 
 	// $.ajax({
  //    type: "GET",
