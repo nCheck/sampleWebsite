@@ -104,11 +104,17 @@ $('#check').click(function(event) {
 
 	$.getJSON('http://anyorigin.com/go?url=https%3A//nginx%3AP1Yd3MF0P@tshirtpartner.com/orders/pincode%3Fpincode%3D'+name+'&callback=?', 
 		function(data){
+			console.log(data.contents);
 		if((data.contents) == "False")
 		{
 			$('#pincode').tooltip('show');
 		}
 	});
+
+
+// 	$.getJSON('http://anyorigin.com/go?url=https%3A//nginx%3AP1Yd3MF0P@tshirtpartner.com/orders/pincode%3Fpincode%3D'+name+'&callback=?', function(data){
+// 	alert(data.contents);
+// });
 
 	// $.ajax({
  //    type: "GET",
